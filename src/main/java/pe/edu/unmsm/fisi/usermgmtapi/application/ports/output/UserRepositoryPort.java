@@ -6,10 +6,12 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserRepositoryPort {
-    void saveUser(User user);
-    User getUserById(String userId);
-    boolean deleteUserById(String userId);
-    Optional<User> updateUser(User user);
+    User saveUser(User user);
+    Optional<User> getUserById(Long id);
+    void deleteUserById(Long id);
     List<User> getAllUsers();
-    Optional<User> userByUsername(String username);
+    Optional<User> getUserByUsername(String username);
+    boolean existsByUsername(String username);
+    boolean existsByEmail(String email);
+    boolean existsById(Long id);
 }

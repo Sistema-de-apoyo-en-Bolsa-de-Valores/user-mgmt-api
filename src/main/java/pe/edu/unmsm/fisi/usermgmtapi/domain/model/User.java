@@ -1,10 +1,12 @@
 package pe.edu.unmsm.fisi.usermgmtapi.domain.model;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.time.LocalDate;
-
-@Data
+@Getter
+@Setter
+@Builder
 public class User {
     private Long id;
     private String username;
@@ -12,9 +14,4 @@ public class User {
     private String email;
     private String name;
     private String lastname;
-    private LocalDate blockedUntil;
-    private Boolean accountNonExpired;
-    private Boolean accountNonLocked;
-
-
 }
