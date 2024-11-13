@@ -19,4 +19,6 @@ DB_PORT=3306
 DB_USERNAME=root
 DB_PASSWORD=123
 DB_NAME=db_stock_market_support_system
+```
+
 ![image](https://github.com/user-attachments/assets/4f16e6c9-55e6-451b-812a-4859d4615ecf)
